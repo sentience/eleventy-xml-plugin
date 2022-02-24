@@ -8,6 +8,7 @@
     "test": "ava --verbose",
     "prebuild": "npm test",
     "start": "microbundle watch -i ./src/index.js",
+    "prepare": "npm run build",
     "build": "microbundle -i ./src/index.js --external none",
     "release": "travis-deploy-once 'semantic-release'"
   },
